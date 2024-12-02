@@ -1,0 +1,200 @@
+* {
+  box-sizing: border-box;
+}
+
+body,
+ul,
+p,
+h1,
+h3 {
+  margin: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif;
+  color: #333;
+  background-color: #f4f4f4;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.container {
+  width: 1140px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+/* 页面头部区域样式 */
+.page-header {
+  padding: 15px 0;
+  background-color: #c2d832;
+}
+
+.page-header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.page-header .logo {
+  display: block;
+  width: 180px;
+  height: 50px;
+  background-image: url(../images/logo.png);
+  background-size: cover;
+  color: transparent;
+}
+
+.page-header a {
+  line-height: 50px;
+  color: #fff;
+  font-size: 18px;
+  margin: 0 15px;
+}
+
+/* 页面主体区块样式 */
+.page-body {
+  margin-top: 20px;
+}
+
+.page-body .container {
+  display: flex;
+  justify-content: space-between;
+  min-height: 400px;
+}
+
+.page-body .cart-list {
+  flex: 1;
+  padding: 20px;
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+.page-body h3 {
+  font-weight: 500;
+  padding-bottom: 10px;
+  color: #333;
+}
+
+.page-body .row {
+  display: flex;
+  border-bottom: 1px solid #eee;
+}
+
+.page-body .row:last-child {
+  border-bottom: none;
+}
+
+.page-body .col {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  font-size: 15px;
+}
+
+.page-body .col-1 {
+  width: 350px;
+}
+
+.page-body .col-2 {
+  width: 120px;
+}
+
+.page-body .col-3 {
+  width: 170px;
+}
+
+.page-body .col-4 {
+  width: 100px;
+}
+
+.page-body .goods_cover {
+  width: 80px;
+  height: 80px;
+  border-radius: 4px;
+}
+
+.page-body .goods_name {
+  flex: 1;
+  font-size: 14px;
+  margin-left: 10px;
+  overflow: hidden;
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.page-body .counter {
+  display: flex;
+  height: 28px;
+  border: 1px solid #eee;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.page-body .counter input {
+  width: 40px;
+  text-align: center;
+  border: 0 none;
+  outline: none;
+  font-size: 14px;
+}
+
+.page-body .counter button {
+  width: 30px;
+  text-align: center;
+  border: 0 none;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.page-body .counter button:hover {
+  background-color: #ececec;
+}
+
+.page-body .counter .minus {
+  font-size: 18px;
+}
+
+.page-body .cart-payment {
+  width: 300px;
+  padding: 20px;
+  margin-left: 20px;
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+.page-body .cart-payment li {
+  margin-top: 10px;
+  font-size: 15px;
+}
+
+.page-footer {
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  line-height: 1.5;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 14px;
+  background-color: #434343;
+  color: #ccc;
+}

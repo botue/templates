@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>电商平台 - 购物车</title>
+  <link rel="stylesheet" href="./css/cart.css">
+</head>
+
+<body>
+  <!-- 页面头部 -->
+  <header class="page-header">
+    <div class="container">
+      <!-- 使用 h1 标签有利于 SEO -->
+      <!-- Logo 通过背景图设置，有利于 SEO -->
+      <h1>
+        <a class="logo" href="#">电商平台</a>
+      </h1>
+      <nav class="navbar">
+        <a href="#">我的订单</a>
+        <a href="#">客户服务</a>
+        <a href="#">免费开店</a>
+        <a href="#">企业采购</a>
+        <a href="#">帮助中心</a>
+      </nav>
+    </div>
+  </header>
+  <!-- 页面主体 -->
+  <main class="page-body">
+    <div class="container">
+      <section class="cart-list">
+        <h3>购物车商品清单</h3>
+        <div class="carts">
+          <div class="row">
+            <div class="col col-1">商品</div>
+            <div class="col col-2">单价</div>
+            <div class="col col-3">数量</div>
+            <div class="col col-4">小计</div>
+          </div>
+          <div class="row">
+            <div class="col col-1">
+              <img class="goods_cover" src="./images/goods_1.jpg" alt="">
+              <p class="goods_name">GETIEN歌天对讲机 耳挂领夹式 迷你微小型民用无线电对讲器 餐厅酒店 美容美发4S店服务行业 铅笔</p>
+            </div>
+            <div class="col col-2 price">￥119.00</div>
+            <div class="col col-3">
+              <div class="counter">
+                <button class="minus">-</button>
+                <input type="text" class="number" value="10">
+                <button class="plus">+</button>
+              </div>
+            </div>
+            <div class="col col-4 total">￥119.00</div>
+          </div>
+          <div class="row">
+            <div class="col col-1">
+              <img class="goods_cover" src="./images/goods_2.jpg" alt="">
+              <p class="goods_name">GETIEN歌天（GETIEN）耳挂式骨传导对讲机 迷你微小型无线对讲器 GM-248（百公里对讲）</p>
+            </div>
+            <div class="col col-2 price">￥198.00</div>
+            <div class="col col-3">
+              <div class="counter">
+                <button class="minus">-</button>
+                <input type="text" class="number" value="2">
+                <button class="plus">+</button>
+              </div>
+            </div>
+            <div class="col col-4 total">￥198.00</div>
+          </div>
+          <div class="row">
+            <div class="col col-1">
+              <img class="goods_cover" src="./images/goods_3.jpg" alt="">
+              <p class="goods_name">柯能（KENENG）迷你对讲机 耳挂式微小型无线蓝牙式对讲器 餐厅酒店 美容美发 4S店服务行业 玉兔</p>
+            </div>
+            <div class="col col-2 price">￥99.00</div>
+            <div class="col col-3">
+              <div class="counter">
+                <button class="minus">-</button>
+                <input type="text" class="number" value="1">
+                <button class="plus">+</button>
+              </div>
+            </div>
+            <div class="col col-4 total">￥99.00</div>
+          </div>
+        </div>
+      </section>
+      <section class="cart-payment">
+        <h3>购物车统计</h3>
+        <ul>
+          <li>商品数量：<span class="total-number">0</span>件</li>
+          <li>价格总计：￥<span class="total-amout">0.00</span></li>
+        </ul>
+      </section>
+    </div>
+  </main>
+  <!-- 页面底部 -->
+  <footer class="page-footer">
+    <p>京ICP备2021036118号</p>
+    <p>Copyright © 2004-2024 电商平台 版权所有</p>
+  </footer>
+  <script src="./js/common.js"></script>
+</body>
+
+</html>
